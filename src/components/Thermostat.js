@@ -1,8 +1,7 @@
 import React from "react";
 import DonutChart from "./ignore/DonutChart";
 
-function Thermostat({ temp }){
-  return (<DonutChart value={temp || 23 } />)
+function Thermostat({ currentTemp }){
+  return (<DonutChart value={currentTemp || 23 } />)
 }
-
-export default Thermostat;
+export default Thermostat

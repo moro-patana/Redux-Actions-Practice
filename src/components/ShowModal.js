@@ -14,7 +14,6 @@ function ShowModal({ toggleModal }) {
             }
           }
         }>Show Modal</Button>
-
       </div>
   );
 }

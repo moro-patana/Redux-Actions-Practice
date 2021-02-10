@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import uuid from 'uuid';
 
-function Users({ users, sortOn, firstNameFilter }) {
+function Users({ users, sortOn, firstNameFilter, getUsersList }) {
   let usersDivs = null;
   let sorted = [];
+
+  useEffect(() => {
+    getUsersList()
+  }, [])
 
   if(users){
 
@@ -37,5 +41,4 @@ function Users({ users, sortOn, firstNameFilter }) {
       </div>
   );
 }
-
-export default Users;
+export default Users

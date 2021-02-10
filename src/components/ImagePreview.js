@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from "react-redux"
+import combineReducers from "../reducers/index"
 
 function ImagePreview({ scale, imageUrl}) {
   let width = 200;
@@ -20,4 +22,4 @@ function ImagePreview({ scale, imageUrl}) {
     </div>
   );
 }
-export default ImagePreview;
+export default ImagePreview
